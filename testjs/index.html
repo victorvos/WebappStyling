@@ -4,28 +4,28 @@
         <title>xor</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+    
 </head>
 <body>
-   
-    
+    <div class="container">
+        <h1 id="this-one">0</h1>
+        <h1 id="this-two">0</h1>
+        <button onclick="addOne()" type="button">click to add one</button>
+        <button onclick="addTwo()" type="button">click to add two</button>
+    </div>
+
+    <script>
+        let count = 0;
+        let $thisOne = document.querySelector("#this-one");
         
-          <div class="container">
-            <h1 id="this-one">5</h1>
-            <button onclick="addone()" type="button">click to add one</button>
-          
-          </div>
-        </div>
-          <script type="text/javascript">
-            let count = 0;
-            let $thisOne = document.querySelector("#this-one");
 
-
-            function addone(){
-                count++;
-                console.log(count);
-                $thisOne.innerHTML = count;
-            }
-          </script>
-      </body>
-      </html>
+        function addOne(){
+            count++;
+            console.log(count);
+            $thisOne.innerHTML = count;
+        }
+    </script>
+    <script src="index.js"></script>
+         
+</body> 
+</html>
