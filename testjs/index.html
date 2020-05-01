@@ -10,20 +10,22 @@
     <div class="container">
         <h1 id="this-one">0</h1>
         <h1 id="this-two">0</h1>
-        <button onclick="addOne()" type="button">click to add one</button>
-        <button onclick="addTwo()" type="button">click to add two</button>
+        <button id="button1" type="button">click to add one</button>
+        <button id="button2" type="button">click to add two</button>
     </div>
 
     <script>
-        let count = 0;
         let $thisOne = document.querySelector("#this-one");
-        
 
-        function addOne(){
-            count++;
+        let count = 0;
+        document.getElementById("button1").addEventListener('click', function(){
+            
             console.log(count);
-            $thisOne.innerHTML = count;
-        }
+            count++;
+            document.getElementById("this-one").innerHTML = count;
+        });
+
+        
     </script>
     <script src="index.js"></script>
          
