@@ -11,19 +11,24 @@ let two = 2; // parameter
 
 let $thisTwo = document.querySelector("#this-two");
 let $thisThree = document.querySelector('#this-three');
+let $addingAmount = document.querySelector('#adding-amount');
+let addingAmount; 
 
 document.getElementById("button1").addEventListener('click', addOne);      
 document.getElementById("button2").addEventListener('click', () =>{
+    addingAmount = parseInt($addingAmount.value);
     console.log(count2);
-    count2+=two;
+    count2+=addingAmount;
     $thisTwo.innerHTML = count2;
 });
 
-let $addingAmount = document.querySelector('#adding-amount').value;
-$addingAmount = Number($addingAmount);
+let $hallo = document.querySelector('#hallo');
+let hallo = $hallo.innerHTML;
 
 document.getElementById("buttonAddInputAmount").addEventListener('click', () =>{
-    console.log(count3);
-    count3+=$addingAmount;
+    addingAmount = parseInt($addingAmount.value);
+    console.log(addingAmount);
+    count3+=addingAmount;
     $thisThree.innerHTML = count3;
 })
+
