@@ -32,3 +32,13 @@ document.getElementById("buttonAddInputAmount").addEventListener('click', () =>{
     $thisThree.innerHTML = count3;
 })
 
+let $divSquare = document.querySelector('#divSquare');
+
+if($divSquare){
+    $divSquare.addEventListener('click', () =>{
+        console.log('Ready!');
+        $divSquare.style.backgroundColor = "transparent";
+    })
+}    
+
+
