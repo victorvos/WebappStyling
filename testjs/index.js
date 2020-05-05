@@ -11,19 +11,19 @@ let two = 2; // parameter
 
 let $thisTwo = document.querySelector("#this-two");
 let $thisThree = document.querySelector('#this-three');
-let $addingAmount = document.querySelector('#adding-amount');
-let addingAmount; 
 
 document.getElementById("button1").addEventListener('click', addOne);      
 document.getElementById("button2").addEventListener('click', () =>{
-    addingAmount = parseInt($addingAmount.value);
     console.log(count2);
-    count2+=addingAmount;
+    count2+=2;
     $thisTwo.innerHTML = count2;
 });
 
 let $hallo = document.querySelector('#hallo');
 let hallo = $hallo.innerHTML;
+
+let $addingAmount = document.querySelector('#adding-amount');
+let addingAmount; 
 
 document.getElementById("buttonAddInputAmount").addEventListener('click', () =>{
     addingAmount = parseInt($addingAmount.value);
@@ -34,11 +34,11 @@ document.getElementById("buttonAddInputAmount").addEventListener('click', () =>{
 
 let $divSquare = document.querySelector('#divSquare');
 
-if($divSquare){
+
     $divSquare.addEventListener('click', () =>{
         console.log('Ready!');
         $divSquare.style.backgroundColor = "transparent";
     })
-}    
+
 
 

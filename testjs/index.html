@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<>
-        <title>xor</title>
+
+        <title>test Javascripting</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            .container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 5px;
+            * {
+                box-sizing: border-box;
             }
-            .container div {
-                padding: 10%;
+            .container2 {      
+                text-align: center;    
+                height: 80px;
+                padding: 2px;
+            }
+            .inner {
+                padding-bottom: 3px;
+                float: left;
+                width: 340px;
+                
+            }
+            .grijs {
                 background-color: grey;
+                margin: 2px;
             }
-            #divSquare1 {
-                background-color: red;
-            }
-            #divSquare2 {
+            .groen {
                 background-color: green;
+                margin: 2px;
             }
-            #divSquare3 {
+            .rood {
+                background-color: red;
+                
+                margin: 2px;
+            }
+            .geel {
                 background-color: yellow;
+            
+                margin: 2px;
             }
-            #divSquare4 {
-                background-color: white;
+            .zwart {
+                background-color :black;
             }
+
+        
         </style>
     
 </head>
@@ -44,14 +60,13 @@
         <button id="buttonAddInputAmount" type="button">click to add the input amount</button>
         <br>
         <br>
-        <div class="container">
-            <div id="divSquare1">a</div>
-            <div id="divSquare2">x</div>
-            <div id="divSquare3">e</div>
-            <div id="divSquare4">l</div>
+        <div class="container2 zwart">
+            <div class="grijs inner">a</div>
+            <div class="groen inner">x</div>           
+            
+            <div  class="rood inner">e</div>
+            <div  class="geel inner">l</div>
         </div>
-        
-    </div>
     <script src="index.js"></script>
 
 </body> 
